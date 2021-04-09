@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Link from "next/link";
-import Nav from "./Components/nav";
-import Breadcrumbs from "./Components/breadcrumbs";
-import FindDealers from "./Components/findDealers";
+import Nav from "../Components/nav";
+import Breadcrumbs from "../Components/breadcrumbs";
+import FindDealers from "../Components/findDealers";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
@@ -102,6 +102,8 @@ export default function Node2() {
             <Head>
                 <title>Naveka Node2 - приточная вентиляционная установка для дома, квартиры и офиса</title>
                 <link rel="icon" href="/favicon.png" />
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name="description" content="Приточная установка Naveka Node2 для вентиляции с наименьшим шумом. " />
             </Head>
             <div className="h-full">
                 <Nav />
@@ -113,8 +115,8 @@ export default function Node2() {
                             <img src="/ustanovki/node2.png" className="max-h-96" alt="Naveka Node2" />
                         </div>
                         <div className="lg:w-2/4 lg:pr-10">
-                            <p className="mb-5 text-xl px-5 lg:px-0">Приточная вентиляционная установка серии Node2 предназначена для вентиляции небольших помещений с повышенными требованиями к шумовым характеристикам вентиляции.</p>
-                            <div className="my-5 text-xl flex flex-nowrap items-center justify-between bg-indigo-50 py-10 px-5 rounded-md">
+                            <p className="mb-5 text-xl px-5 lg:px-0 max-w-prose">Приточная вентиляционная установка серии Node2 предназначена для вентиляции небольших помещений с повышенными требованиями к шумовым характеристикам вентиляции.</p>
+                            <div className="my-5 text-xl flex flex-nowrap items-center justify-between bg-indigo-50 py-10 px-5 rounded-md max-w-prose">
                                 <img src="/idea.svg" alt="Рекомендация" className="h-20 inline mr-3"/>
                                 <p>Рекомендована для подачи приточного воздуха в помещения, в которых предъявляются особые требования по шуму и пожаробезопасности. В установке используется негорюючая минеральная вата и нагреватель имеет более низкую рабочую температуру по сравнению со спиральным.</p>
                             </div>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function FindDealers() {
     return (
         <div className="bg-gray-50">
@@ -9,10 +11,12 @@ export default function FindDealers() {
                 </h2>
                 <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
                     <div className="inline-flex rounded-md shadow">
-                        <a href="/dealers"
-                           className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-800 hover:bg-indigo-900">
-                            Найти дилера
-                        </a>
+                        <Link href="dealers">
+                            <a
+                               className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-800 hover:bg-indigo-900">
+                                Найти дилера
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </div>

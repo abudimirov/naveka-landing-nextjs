@@ -11,7 +11,7 @@ export default function Breadcrumbs() {
                 </Link>
             </li>
             <li className="inline">
-                <Link href="/for-home">
+                <Link href="for-home">
                     <a className="py-2 pr-4 text-gray-600 hover:text-gray-900 tracking-wide font-medium">
                         Для дома и офиса →
                     </a>

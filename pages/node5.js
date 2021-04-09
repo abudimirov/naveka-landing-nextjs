@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Link from "next/link";
-import Nav from "./Components/nav";
-import Breadcrumbs from "./Components/breadcrumbs";
-import FindDealers from "./Components/findDealers";
+import Nav from "../Components/nav";
+import Breadcrumbs from "../Components/breadcrumbs";
+import FindDealers from "../Components/findDealers";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
@@ -106,6 +106,8 @@ export default function Node5() {
             <Head>
                 <title>Naveka Node5 - приточно-вытяжная вентиляционная установка для дома, квартиры и офиса</title>
                 <link rel="icon" href="/favicon.png" />
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name="description" content="Приточная установка Naveka Node5 для приточно-вытяжной вентиляции сухих помещений. " />
             </Head>
             <div className="h-full">
                 <Nav />
@@ -114,11 +116,11 @@ export default function Node5() {
                     <h1 className="text-5xl font-semibold mb-10 lg:mb-20">Naveka Node5</h1>
                     <div className="flex flex-wrap justify-between items-center mb-10 lg:mb-20">
                         <div className="lg:w-2/4 px-10 lg:px-0 mb-10 lg:mb-0 flex justify-center">
-                            <img src="/ustanovki/node5.jpg" className="max-h-96" alt="Naveka Node5" />
+                            <img src="/ustanovki/naveka-node5.jpg" className="max-h-96" alt="Naveka Node5" />
                         </div>
                         <div className="lg:w-2/4 lg:pr-10">
-                            <p className="mb-5 text-xl px-5 lg:px-0">Приточно-вытяжные установки Node5 предназначены как для общественных пространств, офиса, административного здания, так и для частного дома или коттеджа. Применяется в зданиях, где требуется соблюдение не высокого уровня шума.</p>
-                            <div className="my-5 text-xl flex flex-nowrap items-center justify-between bg-indigo-50 py-10 px-5 rounded-md">
+                            <p className="mb-5 text-xl px-5 lg:px-0 max-w-prose">Приточно-вытяжные установки Node5 предназначены как для общественных пространств, офиса, административного здания, так и для частного дома или коттеджа. Применяется в зданиях, где требуется соблюдение не высокого уровня шума.</p>
+                            <div className="my-5 text-xl flex flex-nowrap items-center justify-between bg-indigo-50 py-10 px-5 rounded-md max-w-prose">
                                 <img src="/idea.svg" alt="Рекомендация" className="h-20 inline mr-3"/>
                                 <p>Рекомендована к выбору для помещений с сухим воздухом. Из-за особенностей рекуператора способна передавать влагу от вытяжного воздуха приточному, что позволяет поддерживать комфортный климат. Существует исполнение Node5 для установки за пределами помещения.</p>
                             </div>

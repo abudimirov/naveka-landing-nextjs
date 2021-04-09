@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Link from "next/link";
-import Nav from "./Components/nav";
-import Breadcrumbs from "./Components/breadcrumbs";
-import FindDealers from "./Components/findDealers";
+import Nav from "../Components/nav";
+import Breadcrumbs from "../Components/breadcrumbs";
+import FindDealers from "../Components/findDealers";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
@@ -133,6 +133,8 @@ export default function Node4() {
             <Head>
                 <title>Naveka Node4 - приточная вентиляционная установка для дома, квартиры и офиса</title>
                 <link rel="icon" href="/favicon.png" />
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name="description" content="Приточная установка Naveka Node4 для вентиляции с наибольшей производительностью. " />
             </Head>
             <div className="h-full">
                 <Nav />
@@ -144,8 +146,8 @@ export default function Node4() {
                             <img src="/ustanovki/node4.jpg" className="max-h-96" alt="Naveka Node4" />
                         </div>
                         <div className="lg:w-2/4 lg:pr-10">
-                            <p className="mb-5 text-xl px-5 lg:px-0">Приточная вентиляционная установка серии Node4 предназначена для общеобменной вентиляции помещений. Для высокой результативности работы установки она оснащается безулиточным немецким вентилятором, благодаря которому производительность подобной серии моделей может достигать порядка 1000 м3/ч.</p>
-                            <div className="my-5 text-xl flex flex-nowrap items-center justify-between bg-indigo-50 py-10 px-5 rounded-md">
+                            <p className="mb-5 text-xl px-5 lg:px-0 max-w-prose">Приточная вентиляционная установка серии Node4 предназначена для общеобменной вентиляции помещений. Для высокой результативности работы установки она оснащается безулиточным немецким вентилятором, благодаря которому производительность подобной серии моделей может достигать порядка 1000 м3/ч.</p>
+                            <div className="my-5 text-xl flex flex-nowrap items-center justify-between bg-indigo-50 py-10 px-5 rounded-md max-w-prose">
                                 <img src="/idea.svg" alt="Рекомендация" className="h-20 inline mr-3"/>
                                 <p>Рекомендована к выбору для вентиляции помещений с большой и разветвленной сетью вентиляционных каналов. Node4 способна произвести существенное давление воздуха даже в общирной сети воздуховодов.</p>
                             </div>

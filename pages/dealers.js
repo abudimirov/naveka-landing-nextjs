@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from "next/link";
-import Nav from "./Components/nav";
+import Nav from "../Components/nav";
 
 
 
@@ -10,6 +10,8 @@ export default function Dealers() {
             <Head>
                 <title>Naveka - где купить? Список дилеров</title>
                 <link rel="icon" href="/favicon.png" />
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name="description" content="Список официальных дилеров бренда Naveka в России" />
             </Head>
             <div className="h-full">
                 <Nav />
@@ -38,9 +40,11 @@ export default function Dealers() {
                                         </ul>
                                     </div>
                                     <div className="lg:w-40 pb-5">
-                                        <button className="bg-blue-500 text-white hover:bg-blue-600 rounded-xl px-10 py-2 font-semibold">
-                                            Интернет-магазин
-                                        </button>
+                                        <a href="https://venttop.com/?utm_source=naveka&utm_medium=display&utm_campaign=naveka-site&utm_content=dealers&utm_term=for-persons" target="_blank">
+                                            <button className="bg-blue-500 text-white hover:bg-blue-600 rounded-xl px-10 py-2 font-semibold">
+                                                Интернет-магазин
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center text-center lg:text-left">
@@ -60,9 +64,11 @@ export default function Dealers() {
                                         </ul>
                                     </div>
                                     <div className="lg:w-40 pb-5">
-                                        <button className="bg-blue-500 text-white hover:bg-blue-600 rounded-xl px-10 py-2 font-semibold">
-                                            Интернет-магазин
-                                        </button>
+                                        <a href="https://www.optovent.ru/" rel="noindex nofollow" target="_blank">
+                                            <button className="bg-blue-500 text-white hover:bg-blue-600 rounded-xl px-10 py-2 font-semibold">
+                                                Интернет-магазин
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -87,9 +93,11 @@ export default function Dealers() {
                                     </ul>
                                 </div>
                                 <div className="pb-5">
-                                    <button className="bg-blue-500 text-white hover:bg-blue-600 rounded-xl px-10 py-2 font-semibold mb-3">
-                                        B2B интернет-магазин
-                                    </button>
+                                    <a href="https://progress-nw.ru/?utm_source=naveka&utm_medium=display&utm_campaign=naveka-site&utm_content=dealers&utm_term=for-business" target="_blank">
+                                        <button className="bg-blue-500 text-white hover:bg-blue-600 rounded-xl px-10 py-2 font-semibold mb-3">
+                                            B2B интернет-магазин
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                             <hr />

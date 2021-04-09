@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from "next/link";
-import Nav from "./Components/nav";
-import FindDealers from "./Components/findDealers";
+import Nav from "../Components/nav";
+import FindDealers from "../Components/findDealers";
 
 
 
@@ -11,6 +11,8 @@ export default function Home() {
             <Head>
                 <title>Naveka Node - вентиляционная установка для дома, квартиры и офиса</title>
                 <link rel="icon" href="/favicon.png" />
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name="description" content="Naveka NODE - вентиляционные установки для дома и офиса. Готовые решения для приточной и приточно-вытяжной вентиляции" />
             </Head>
             <div className="h-full">
                 <Nav />
@@ -21,10 +23,10 @@ export default function Home() {
                                 Для дома и офиса
                                 <small className="text-5xl text-indigo-800 pt-3 uppercase block">Naveka Node</small>
                             </h1>
-                            <p className="py-3 text-xl">Naveka Node создана для организации вентиляции в обычных помещениях и помещениях с повышенной влажностью. </p>
-                            <p className="pb-10 text-xl">Naveka Node - готовы работать «из коробки». Достаточно смонтировать установку в помещении, подсоединить воздуховоды и датчик температуры для вентиляционного канала, подключить к электросети и включить. </p>
+                            <p className="py-3 text-xl max-w-prose">Naveka Node создана для организации вентиляции в обычных помещениях и помещениях с повышенной влажностью. </p>
+                            <p className="pb-10 text-xl max-w-prose">Naveka Node - готовы работать «из коробки». Достаточно смонтировать установку в помещении, подсоединить воздуховоды и датчик температуры для вентиляционного канала, подключить к электросети и включить. </p>
                             <div>
-                                <Link href="/dealers">
+                                <Link href="dealers">
                                 <a className="rounded-md py-2 shadow px-4 bg-lime text-white hover:bg-indigo-900 tracking-wide font-medium">
                                     Купить Naveka Node
                                 </a>
@@ -57,7 +59,7 @@ export default function Home() {
                             <p className="mb-5 text-xl"><img src="/check.svg" alt="установлен" className="h-6 inline mr-3"/>Максимально безопасный РТС нагреватель с защитным термостатом</p>
                             <p className="mb-5 text-xl"><img src="/check.svg" alt="установлен" className="h-6 inline mr-3"/>Максимальный напор воздуха до 480 Па</p>
                             <p className="mb-5 text-xl"><img src="/check.svg" alt="установлен" className="h-6 inline mr-3"/>Для установки внутри помещений от +5°C</p>
-                            <p className="mb-10 text-xl">Рекомендована к выбору для помещений, в которые требуется только подача приточного воздуха и к работе вентиляционной установки предъявляются особые требования по издаваемому шуму.</p>
+                            <p className="mb-10 text-xl max-w-prose">Рекомендована к выбору для помещений, в которые требуется только подача приточного воздуха и к работе вентиляционной установки предъявляются особые требования по издаваемому шуму.</p>
                             <div>
                                 <Link href="/node2">
                                     <a className="rounded-md py-2 shadow px-4 ring ring-indigo-800 border-indigo-800 text-indigo-800 hover:bg-indigo-900 hover:text-white tracking-wide font-medium">
@@ -82,7 +84,7 @@ export default function Home() {
                             <p className="mb-5 text-xl"><img src="/check.svg" alt="установлен" className="h-6 inline mr-3"/> Максимальный напор воздуха до 770 Па</p>
                             <p className="mb-5 text-xl"><img src="/check.svg" alt="установлен"
                                                              className="h-6 inline mr-3"/> Можно установить как в помещении, так и на улице до -30°C</p>
-                            <p className="mb-10 text-xl">Рекомендована к выбору для вентиляции помещений с большой и разветвленной сетью вентиляционных каналов. Node4 способна произвести существенное давление воздуха даже в общирной сети воздуховодов.</p>
+                            <p className="mb-10 text-xl max-w-prose">Рекомендована к выбору для вентиляции помещений с большой и разветвленной сетью вентиляционных каналов. Node4 способна произвести существенное давление воздуха даже в общирной сети воздуховодов.</p>
                             <div>
                                 <Link href="/node4">
                                     <a className="rounded-md py-2 shadow px-4 ring ring-indigo-800 border-indigo-800 text-indigo-800 hover:bg-indigo-900 hover:text-white tracking-wide font-medium">
@@ -108,7 +110,7 @@ export default function Home() {
                                                              className="h-6 inline mr-3"/> Установлены самые тихие в своем классе немецкие вентиляторы типа — улитка</p>
                             <p className="mb-5 text-xl"><img src="/check.svg" alt="установлен"
                                                              className="h-6 inline mr-3"/> Есть исполнение для влажных помещений — AQUA</p>
-                            <p className="mb-5 text-xl">Рекомендована к выбору там, где требуется экономия энергии при нагреве приточного воздуха и предъявляются особые требования к шуму от вентиляции. Комплектуются водяными или безопасными РТС нагервателями.</p>
+                            <p className="mb-5 text-xl max-w-prose">Рекомендована к выбору там, где требуется экономия энергии при нагреве приточного воздуха и предъявляются особые требования к шуму от вентиляции. Комплектуются водяными или безопасными РТС нагервателями.</p>
                         </div>
                         <div className="lg:w-2/4 lg:pl-10 order-first lg:order-last">
                             <img src="/ustanovki/naveka-node1.png" className="max-h-96" alt="Naveka Node1" />
@@ -126,7 +128,7 @@ export default function Home() {
                                                              className="h-6 inline mr-3"/> Установлены самые тихие в своем классе немецкие вентиляторы АС типа — улитка, или ЕС моторы</p>
                             <p className="mb-5 text-xl"><img src="/check.svg" alt="установлен"
                                                              className="h-6 inline mr-3"/> Не требует дренажной системы для отвода конденсата</p>
-                            <p className="mb-5 text-xl">Рекомендована к выбору в случае, если требуется максимальная энергоэффективность приточно-вытяжной вентиляции. Данная установка не имеет ограничений в применении.</p>
+                            <p className="mb-5 text-xl max-w-prose">Рекомендована к выбору в случае, если требуется максимальная энергоэффективность приточно-вытяжной вентиляции. Данная установка не имеет ограничений в применении.</p>
                         </div>
                     </div>
                     <div className="flex flex-wrap justify-between items-center mb-20">
@@ -140,7 +142,7 @@ export default function Home() {
                                                              className="h-6 inline mr-3"/> Есть уличное исполнение</p>
                             <p className="mb-5 text-xl"><img src="/check.svg" alt="установлен"
                                                              className="h-6 inline mr-3"/> Не требует дренажной системы для отвода конденсата</p>
-                            <p className="mb-10 text-xl">Рекомендована к выбору для помещений с сухим воздухом. Из-за особенностей рекуператора способна передавать влагу от вытяжного воздуха приточному, что позволяет поддерживать комфортный климат. Существует исполнение Node5 для установки за пределами помещения.</p>
+                            <p className="mb-10 text-xl max-w-prose">Рекомендована к выбору для помещений с сухим воздухом. Из-за особенностей рекуператора способна передавать влагу от вытяжного воздуха приточному, что позволяет поддерживать комфортный климат. Существует исполнение Node5 для установки за пределами помещения.</p>
                             <div>
                                 <Link href="/node5">
                                     <a className="rounded-md py-2 shadow px-4 ring ring-indigo-800 border-indigo-800 text-indigo-800 hover:bg-indigo-900 hover:text-white tracking-wide font-medium">
@@ -150,7 +152,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="lg:w-2/4 lg:pl-10 order-first lg:order-last">
-                            <img src="/ustanovki/node5.jpg" className="max-h-96" alt="Naveka Node5" />
+                            <img src="/ustanovki/naveka-node5.jpg" className="max-h-96" alt="Naveka Node5" />
                         </div>
                     </div>
                     <p className="text-sm">*КПД - коэффициент полезного действия.</p>

@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Nav from "./Components/nav";
-import FindDealers from "./Components/findDealers";
+import Nav from "../Components/nav";
+import FindDealers from "../Components/findDealers";
 
 
 
@@ -10,6 +10,8 @@ export default function Business() {
             <Head>
                 <title>Naveka - вентиляционное оборудование для профессионалов. HVAC, промышленная вентиляция</title>
                 <link rel="icon" href="/favicon.png" />
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name="description" content="Naveka VAST - промышленные вентиляционные установки для больниц, бассейнов, горячих цехов и промышленных помещений" />
             </Head>
             <div className="h-full">
                 <Nav />
@@ -20,8 +22,8 @@ export default function Business() {
                                 Для профессионалов
                                 <small className="text-5xl text-indigo-800 pt-3 uppercase block">Naveka VAST1</small>
                             </h1>
-                            <p className="py-3 text-xl">Вентиляционные установки серии VAST1 предназначены для выполнения всех задач по обработке воздуха: увлажнение, осушение, рекуперация, фильтрация, нагрев, охлаждение, смешение.</p>
-                            <p className="text-xl">Установки имеют каркасно-панельную конструкцию с негорючей минеральной ватой в качестве изоляции в панелях установки. </p>
+                            <p className="py-3 text-xl max-w-prose">Вентиляционные установки серии VAST1 предназначены для выполнения всех задач по обработке воздуха: увлажнение, осушение, рекуперация, фильтрация, нагрев, охлаждение, смешение.</p>
+                            <p className="text-xl max-w-prose">Установки имеют каркасно-панельную конструкцию с негорючей минеральной ватой в качестве изоляции в панелях установки. </p>
                             <div className="mt-10 flex flex-wrap jusify-between text-white">
                                 <div className="mr-20">
                                     <h2 className="text-2xl font-semibold">Производительность</h2>

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from "next/link";
-import Nav from "./Components/nav";
-import FindDealers from "./Components/findDealers";
+import Nav from "../Components/nav";
+import FindDealers from "../Components/findDealers";
 
 
 
@@ -11,6 +11,8 @@ export default function Kanal() {
             <Head>
                 <title>Канальная вентиляция Naveka - для дома, квартиры и офиса</title>
                 <link rel="icon" href="/favicon.png" />
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name="description" content="Канальные вентиляторы Naveka. Качественные немецкие компоненты. Сделано в России" />
             </Head>
             <div className="h-full">
                 <Nav />
@@ -21,10 +23,10 @@ export default function Kanal() {
                                 Канальные вентиляторы
                                 <small className="text-5xl text-indigo-800 pt-3 uppercase block">Naveka V</small>
                             </h1>
-                            <p className="py-3 text-xl">Naveka V устанавливается непосредственно в канал или в разрыв воздуховода, прокачивая по нему воздух, и благодаря небольшим размерам скрывается за подшивным потолком или в специальном вертикальном шкафу. </p>
-                            <p className="pb-10 text-xl">Это вентиляторы с самыми низкими шумовыми характеристиками, поэтому не требуют дополнительной звукоизоляции. </p>
+                            <p className="py-3 text-xl max-w-prose">Naveka V устанавливается непосредственно в канал или в разрыв воздуховода, прокачивая по нему воздух, и благодаря небольшим размерам скрывается за подшивным потолком или в специальном вертикальном шкафу. </p>
+                            <p className="pb-10 text-xl max-w-prose">Это вентиляторы с самыми низкими шумовыми характеристиками, поэтому не требуют дополнительной звукоизоляции. </p>
                             <div>
-                                <Link href="/dealers">
+                                <Link href="dealers">
                                 <a className="rounded-md py-2 shadow px-4 bg-lime text-white hover:bg-indigo-900 tracking-wide font-medium">
                                     Купить вентилятор Naveka
                                 </a>
